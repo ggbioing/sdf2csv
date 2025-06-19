@@ -1,0 +1,1 @@
+t1=`mktemp` && `sdf2stdout.bat $1 > $t1` && t2=`mktemp` && `sdf2stdout.bat $2 > $t2` && WinMergeU.exe $t1 $t2 && rm -f $t1 $t2

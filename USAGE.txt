@@ -1,0 +1,8 @@
+USAGE: sdf2csv.exe (file.sdf) (password) (tabella|query) (suffisso)
+
+L'eseguibile restituisce il file: file.sdf.suffisso.csv
+
+La tabella (terzo argomento) può essere scelta fra "pazienti" e "analisi".
+In alternativa si può scrivere direttamente la query SQL, come nel seguente esempio:
+
+sdf2csv.exe pazienti.sdf password "SELECT * FROM pazienti as p LEFT JOIN analisi as a ON p.id = a.id_paziente" query
